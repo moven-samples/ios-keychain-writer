@@ -27,7 +27,10 @@
 
 - (IBAction)showAlert:(UIButton *)sender {
     NSLog(@"Button Pressed");
-    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Alert" message:@"Thank You." preferredStyle:UIAlertControllerStyleAlert];
+    
+    NSString *message = @"Token saved!";
+    NSLog(@"%@", message);
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"Alert" message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction * action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
     
     [alert addAction:action];
