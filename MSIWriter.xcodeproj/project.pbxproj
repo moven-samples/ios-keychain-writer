@@ -26,6 +26,7 @@
 		3A8AA21B20A5E9E300AA5EA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A8AA21D20A5E9E400AA5EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A8AA21E20A5E9E400AA5EA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A52E94EE20AB7B19006F12C7 /* MSIWriter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MSIWriter.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		3A8AA20E20A5E9E200AA5EA4 /* MSIWriter */ = {
 			isa = PBXGroup;
 			children = (
+				A52E94EE20AB7B19006F12C7 /* MSIWriter.entitlements */,
 				3A8AA20F20A5E9E200AA5EA4 /* AppDelegate.h */,
 				3A8AA21020A5E9E200AA5EA4 /* AppDelegate.m */,
 				3A8AA21220A5E9E200AA5EA4 /* ViewController.h */,
@@ -102,6 +104,11 @@
 				TargetAttributes = {
 					3A8AA20B20A5E9E200AA5EA4 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -283,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MSIWriter/MSIWriter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2526YS86J3;
 				INFOPLIST_FILE = MSIWriter/Info.plist;
@@ -300,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MSIWriter/MSIWriter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2526YS86J3;
 				INFOPLIST_FILE = MSIWriter/Info.plist;
